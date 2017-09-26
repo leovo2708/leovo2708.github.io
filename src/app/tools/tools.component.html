@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            Copy-paste the string to escape or unescape here
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <textarea class="form-control" rows="10" [(ngModel)]="text"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" (click)="escape()">Escape</button>
+            <button type="button" class="btn btn-primary" (click)="unescape()">Unescape</button>
+        </div>
+    </div>
+</div>
