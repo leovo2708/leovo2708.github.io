@@ -1,1 +1,1 @@
-export * from './tools.component';
+export * from './tools.module';

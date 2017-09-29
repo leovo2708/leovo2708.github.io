@@ -1,16 +1,14 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            Copy-paste the string to escape or unescape here
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-                <textarea class="form-control" rows="10" [(ngModel)]="text"></textarea>
-            </div>
-            <button type="button" class="btn btn-primary" (click)="escape()">Escape</button>
-            <button type="button" class="btn btn-primary" (click)="unescape()">Unescape</button>
-        </div>
+        <nav class="col-md-2 bg-light sidebar">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="string-quote-encode">String Quote Encode</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="col-md-10 ml-sm-auto">
+            <router-outlet></router-outlet>
+        </main>
     </div>
 </div>

@@ -1,1 +1,1 @@
-export * from './css-reference.component';
+export * from './css-reference.module';
