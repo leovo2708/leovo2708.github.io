@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container" style="max-height: 200px">
+    <div class="container">
+      <h4>Giá trị default là static</h4>
+      <div class="block-yellow">
+        relative parent
+        <div class="block--alpha" style="width: 100px; position: static;top: 5px;right: 5px;">static child</div>
+      </div>
+    </div>
+    <div class="container">
+      <h4>Giá trị fixed để cố định element ngay cả khi scroll</h4>
+      <div class="block-yellow" style="position: relative;">
+        relative parent
+        <div class="block--alpha" style="width: 100px; position: fixed;top: 5px;left: 5px;">fixed child</div>
+      </div>
+    </div>
+    <div class="container">
+      <h4>Giá trị absolute sẽ cố định element bên trong 1 relative parent</h4>
+      <div class="block-yellow" style="position: relative;">
+        relative parent
+        <div class="block--alpha" style="width: 100px; position: absolute;top: 5px;right: 5px;">absolute child</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

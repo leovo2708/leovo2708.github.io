@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h4>Giá trị inline sẽ tính kích thước element phụ thuộc vào content bên trong, do đó sử dụng thêm thuộc tính width hay height
+      sẽ ko có tác dụng. Thêm nữa, nó sẽ nằm trên cùng 1 dòng (inline)</h4>
+    Hello world
+    <div class="block-yellow" style="display: inline; width: 100px;">Hello world</div> Hello world
+  </div>
+  <div class="container">
+    <h4>Giá trị inline-block là kết hợp vừa inline và block, cho phép set kích thước của element, để text có thể rớt dòng. Đồng
+      thời nó sẽ nằm trên cùng 1 dòng</h4>
+    Hello world
+    <div class="block-yellow" style="display: inline-block; width: 50px; height: 50px;">Hello world</div> Hello world
+  </div>
+  <div class="container">
+    <h4>Giá trị block sẽ khiến element sẽ nằm riêng trên 1 dòng</h4>
+    Hello world
+    <div class="block-yellow" style="display: block; width: 50px; height: 50px;">Hello world</div> Hello world
+  </div>
+</body>
+
+</html>

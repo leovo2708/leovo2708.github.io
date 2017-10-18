@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h4>
+      box-sizing có default value là content-box, kích thước sẽ được tính bằng tổng kích thước của content + padding + border => bạn sẽ thấy xuất hiện scroll
+    </h4>
+    <div class="block-yellow" style="float: left; width: 100%; padding: 3px 10px;">content-box</div>
+  </div>
+  <div class="container">
+    <h4>box-sizing: border-box => kích thước box sẽ được tính bằng kích thước của content ko bao gồm padding + border</h4>
+    <div class="block-yellow" style="float: left; width: 100%; padding: 3px 10px; box-sizing: border-box;">border-box</div>
+  </div>
+</body>
+
+</html>
