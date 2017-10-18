@@ -1,0 +1,25 @@
+.container {
+  display: block;
+  width: 100%;
+  background-color: lightblue;
+  padding: 3px 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.block-yellow {
+  background: #ffdd57;
+  color: #310736;
+}
+
+.block--alpha {
+  background: #05ffb0;
+  color: #310736;
+}
+
+.block--beta {
+  background: #00e7eb;
+  color: #310736;
+}

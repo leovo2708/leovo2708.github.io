@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ToolsRoutingModule } from './tools-routing.module';
-import { StringQuoteEncodeComponent } from './string-quote-encode.component';
+import { StringEncoderComponent } from './string-encoder.component';
 import { ToolsComponent } from './tools.component';
 
 @NgModule({
@@ -13,7 +13,7 @@ import { ToolsComponent } from './tools.component';
     ],
     declarations: [
         ToolsComponent,
-        StringQuoteEncodeComponent
+        StringEncoderComponent
     ]
 })
 export class ToolsModule { }

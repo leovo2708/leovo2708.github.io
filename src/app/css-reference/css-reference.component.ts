@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
     templateUrl: './css-reference.component.html',
     styleUrls: ['./css-reference.component.scss']
 })
-export class CssReferenceComponent {
-}
+export class CssReferenceComponent { }

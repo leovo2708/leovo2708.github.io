@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ToolsComponent } from './tools.component';
-import { StringQuoteEncodeComponent } from './string-quote-encode.component';
+import { StringEncoderComponent } from './string-encoder.component';
 
 const routes: Routes = [
     {
         path: 'tools',
         component: ToolsComponent,
         children: [
-            { path: '', redirectTo: 'string-quote-encode', pathMatch: 'full' },
-            { path: 'string-quote-encode', component: StringQuoteEncodeComponent }
+            { path: '', redirectTo: 'string-encoder', pathMatch: 'full' },
+            { path: 'string-encoder', component: StringEncoderComponent }
         ]
     }
 ];

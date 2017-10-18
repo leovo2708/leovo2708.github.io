@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h4>sử dụng content chỉ cho :before và :after</h4>
+    <div class="block-yellow" id="content">
+      world
+    </div>
+    <style type="text/css">
+      #content:before {
+        content: "Hello";
+      }
+
+      #content:after {
+        content: "!";
+      }
+
+    </style>
+  </div>
+</body>
+
+</html>

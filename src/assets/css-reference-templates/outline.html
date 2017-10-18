@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h4>Sử dụng outline sẽ ko làm tăng kích thước element như border</h4>
+    <div class="block-yellow">Hello
+      <span id="border">hover to border</span> world</div>
+    <div class="block--alpha">Hello
+      <span id="outline">hover to outline</span> world</div>
+    <style type="text/css">
+      #border:hover {
+        border: 4px dotted red;
+      }
+
+      #outline:hover {
+        outline: 4px dotted red;
+      }
+
+    </style>
+  </div>
+</body>
+
+</html>

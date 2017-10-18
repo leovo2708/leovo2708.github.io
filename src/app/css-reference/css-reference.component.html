@@ -1,116 +1,20 @@
-<div class="container">
-    <section>
-        <h2>box-sizing</h2>
-        <div class="container">
-            <h4>box-sizing có default value là content-box, kích thước sẽ được tính bằng tổng kích thước của content + padding
-                + border
-            </h4>
-            <div class="block-yellow" style="float: left; width: 100%; padding: 3px 10px;">content-box</div>
-        </div>
-        <div class="container">
-            <h4>box-sizing: border-box => kích thước box sẽ được tính bằng kích thước của content ko bao gồm padding + border</h4>
-            <div class="block-yellow" style="float: left; width: 100%; padding: 3px 10px; box-sizing: border-box;">border-box</div>
-        </div>
-    </section>
-    <section>
-        <h2>display</h2>
-        <div class="container">
-            <h4>display: inline; thường dùng cho text element, kích thước sẽ được tính trên text, do đó sử dụng width hay height
-                sẽ ko affect => text ko bị rớt dòng. Thẻ span default có thuộc tính này.</h4>
-            <div class="block-yellow" style="display: inline; width: 100px;">display: inline</div>
-        </div>
-        <div class="container">
-            <h4>display: inline-block; là kết hợp vừa inline và block, cho phép set kích thước, để text có thể rớt dòng</h4>
-            Hello
-            <div class="block-yellow" style="display: inline-block; width: 100px; height: 50px;">display: inline-block</div> world
-        </div>
-    </section>
-    <section>
-        <h2>line-height</h2>
-        <div class="container">
-            <h4>xác định chiều cao của 1 dòng text</h4>
-            <div class="block-yellow" style="line-height: 1.6;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis
-                blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas imperdiet felis nisi,
-                fringilla luctus felis hendrerit sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida
-                libero rhoncus ut. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet.</div>
-        </div>
-    </section>
-    <section>
-        <h2>outline</h2>
-        <div class="container">
-            <h4>Sử dụng outline sẽ ko làm tăng kích thước element như border</h4>
-            <div class="block-yellow">Hello <span id="border">hover to border</span> world</div>
-            <div class="block--alpha">Hello <span id="outline">hover to outline</span> world</div>
-            <style type="text/css">
-                #border:hover {
-                    border: 4px dotted red;
-                }
-
-                #outline:hover {
-                    outline: 4px dotted red;
-                }
-            </style>
-        </div>
-    </section>
-    <section>
-        <h2>float</h2>
-        <div class="container">
-            <h4>ko sử dụng clear: both</h4>
-            <div class="block-yellow" style="float: left; width: 100px;">left</div>
-            <div class="block--alpha">without clear</div>
-        </div>
-        <div class="container">
-            <h4>sử dụng clear: both để reset float của element bên trên</h4>
-            <div class="block-yellow" style="float: left; width: 100px;">left</div>
-            <div class="block--alpha" style="clear: both;">clear: both;</div>
-        </div>
-        <div class="container">
-            <h4>ko sử dụng clear: both nhưng tính lại kích thước content chính xác hơn</h4>
-            <div class="block-yellow" style="float: left; width: 100px;">left</div>
-            <div class="block--alpha" style="margin-left: 100px;">set margin-left</div>
-        </div>
-    </section>
-    <section>
-        <h2>position => default value: static</h2>
-        <div class="container">
-            <h4>sử dụng default position</h4>
-            <div class="block-yellow">
-                static parent
-                <div class="block--alpha" style="width: 100px; position: absolute;top: 5px;right: 5px;">child absolute</div>
-            </div>
-        </div>
-        <div class="container">
-            <h4>sử dụng relative position để thấy rằng absolute position sẽ phụ thuộc vào nó</h4>
-            <div class="block-yellow" style="position: relative;">
-                relative parent
-                <div class="block--alpha" style="width: 100px; position: absolute;top: 5px;right: 5px;">absolute child</div>
-            </div>
-        </div>
-        <div class="container">
-            <h4>sử dụng fixed position để cố định element ngay cả khi scroll</h4>
-            <div class="block-yellow" style="position: relative;">
-                relative parent
-                <div class="block--alpha" style="width: 100px; position: fixed;top: 5px;right: 5px;">fixed child</div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>content => sử dụng trong :before và :after</h2>
-        <div class="container">
-            <h4>sử dụng content chỉ cho :before và :after</h4>
-            <div class="block-yellow" id="content">
-                world
-            </div>
-            <style type="text/css">
-                #content:before {
-                    content: "Hello";
-                }
-
-                #content:after {
-                    content: "!";
-                }
-            </style>
-        </div>
-    </section>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 bg-light sidebar">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="box-sizing">box-sizing</a>
+                    <a class="nav-link" routerLink="content">content</a>
+                    <a class="nav-link" routerLink="display">display</a>
+                    <a class="nav-link" routerLink="float">float</a>
+                    <a class="nav-link" routerLink="line-height">line-height</a>
+                    <a class="nav-link" routerLink="outline">outline</a>
+                    <a class="nav-link" routerLink="position">position</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="col-md-10 ml-sm-auto">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
 </div>
